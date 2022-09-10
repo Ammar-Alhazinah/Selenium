@@ -1,0 +1,25 @@
+<suite name="Selenium Suite">
+
+    <test name="Test Run Chrome Browser">
+        <parameter name="webDriverName" value="chrome"/>
+
+        <classes>
+            <class name="TestOpenBrowser"/>
+        </classes>
+    </test>
+    <test name="Test Run edge Browser">
+        <parameter name="webDriverName" value="edge"/>
+
+        <classes>
+            <class name="TestOpenBrowser"/>
+        </classes>
+    </test>
+    <test name="Test Run firefox Browser">
+        <parameter name="webDriverName" value="firefox"/>
+        <classes>
+            <class name="TestOpenBrowser"/>
+        </classes>
+    </test>
+
+
+</suite>
