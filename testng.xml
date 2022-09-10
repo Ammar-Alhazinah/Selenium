@@ -1,4 +1,4 @@
-<suite name="Selenium Suite">
+<suite name="Selenium Suite" parraral="test">
 
     <test name="Test Run Chrome Browser">
         <parameter name="webDriverName" value="chrome"/>

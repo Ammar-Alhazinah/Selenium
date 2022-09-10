@@ -1,5 +1,6 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -15,9 +16,12 @@ public class OpenBrowsers {
             driver = new FirefoxDriver();
         } else if (browser.equals("chrome")) {
             System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--incognito");
             //Instantiating driver object
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
+
+
         } else if (browser.equals("edge")) {
             System.setProperty(
                     "webdriver.edge.driver",
