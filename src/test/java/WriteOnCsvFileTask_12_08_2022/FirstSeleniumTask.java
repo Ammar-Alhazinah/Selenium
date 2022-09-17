@@ -1,5 +1,6 @@
-import Assets.OpenBrowsers;
-import Assets.ReadCsvFile;
+package WriteOnCsvFileTask_12_08_2022;
+
+import Assets.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,8 +14,10 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-public class TestBing {
-    //String path = "parameterData.csv";
+
+import static org.testng.Assert.assertEquals;
+
+public class FirstSeleniumTask {
     static WebDriver driver;
 
     @BeforeSuite
